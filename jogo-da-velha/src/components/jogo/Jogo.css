@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+body {
+    background-color: #383955;
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.title {
+    font-size: 40px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.divider {
+    width: 30%; 
+    height: 1px; 
+    background-color: #D2E400; 
+    border: none; 
+    margin-bottom: 1rem; 
+    opacity: 0.7;
+}
+.icon {
+    width: 80px; 
+    height: 80px; 
+}
+.text-x{
+    color:#D2E400;
+}
+.text-o{
+    color:#9C8CFF;
+}
+.text-winner{
+    color: greenyellow;
+}
+.btn-reset {
+    background-color: #9C8CFF;
+    padding: 5px;
+    color: #fff;
+    width: 50%;
+    font-size: 22px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-reset:hover {
+    background-color: #b5a9ff;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: #575771;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.boxes:hover {
+    background-color: #737392;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    max-width: 380px;
+    margin: auto;
+}
+.status{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
